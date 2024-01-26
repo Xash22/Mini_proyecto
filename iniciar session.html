@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iniciar sesión - Parquímetro</title>
+  <link rel="stylesheet" type="text/css" href="css/registro.css">
+  <link rel="shortcut icon" href="./img/icon.svg" type="image/x-icon">
+
+</head>
+<body>
+
+  <div class="contact_form">
+    <div class="formulario">			
+    <h1>Iniciar sesión</h1>
+        <form action="submeter-formulario.php" method="post">
+    <p> <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
+		    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
+		</p>
+	<p>
+	    <label for="curso" class="colocar_curso">Curso <span class="obligatorio">*</span></label>
+	        <input type="curso" name="introducir_curso" id="curso" required="obligatorio" placeholder="Curso">
+    </p>
+						
+	<p>
+		<label for="placa" class="colocar_placa">Placa <span class="obligatorio">*</span></label>
+                    <input type="tel" name="introducir_placa" id="placa" placeholder="Placa">
+		</p>							
+	<p>
+		<label for="fecha_inicio">Fecha y Hora de Inicio:</label>
+      <input type="datetime-local" name="fecha_inicio" required>
+      <label for="fecha_fin">Fecha y Hora de Fin:</label>
+      <input type="datetime-local" name="fecha_fin" required>
+      
+			</label>
+<center><button type="submit" name="enviar_formulario" id="enviar"><a href="index.html">Enviar</a> </button>
+		</center><p class="aviso">
+		<span class="obligatorio"> * </span>los campos son obligatorios.
+    <a href="registrate.html">Registrarte</a>
+    <br>
+    <a href="index.html">volver atras</a>
+			</p>					
+						
+		</form>
+		</div>	
+	</div>
+	<script src="/js/menu.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

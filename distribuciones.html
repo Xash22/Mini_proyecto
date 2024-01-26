@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linux Dominicana</title>
+  <link rel="stylesheet" type="text/css" href="../static/distribuciones.css">
+  <link rel="shortcut icon" href="/static/img/linuxlogo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('enlace') }}">Inicio</a></li>
+        <li><a href="{{ url_for('acerca_de') }}">Acerca de</a></li>
+        <li><a href="{{ url_for('distribuciones') }}">Distribuciones</a></li>
+      <li><a href="{{ url_for('login') }}">Login</a></li>
+
+        <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Linux Dominicana</h1>
+      <p>Lo mas popular en República Dominicana</p>
+    </div>
+  </header>
+  <main>
+    <div class="article">
+      <h1>Distribuciones Linux populares en República Dominicana</h1>
+      <ul>
+         <li>Kali Linux</li>
+        <li>Ubuntu</li>
+        <li>Linux Mint</li>
+        <li>Debian</li>
+        <li>Fedora</li>
+        <li>CentOS</li>
+        <li>Arch Linux</li>
+      </ul>
+       
+
+             <h2>La mas popular</h2>
+             <p>Por su gran cantidad de herramientas para el pentesting hacking etc</p>
+      <img class="circular-image" src="/static/img/kali.png" alt="">
+    </div>
+    <footer>
+      <img src="/static/img/linuxlogo.png" alt="">
+      <p>
+        &copy;2023 Linux Dominicana 
+        Todos los derechos reservados
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

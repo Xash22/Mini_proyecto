@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="shortcut icon" href="/static/img/Linux_logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>Inicio de Sesión</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class="flash-messages">
+        {% for message in messages %}
+          <li class="flash-message">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  
+    <form method="POST" action="/login">
+        <input type="text" name="nombre" placeholder="Usuario" required><br>
+        <input type="password" name="password" placeholder="Contraseña" required><br>
+        <input class="button"  type="submit" value="Iniciar sesión">
+    </form>
+    <a class="boton" href="{{ url_for('form') }}">No tienes cuenta? Regístrate</a>
+   
+
+    
+</body>
+</html>

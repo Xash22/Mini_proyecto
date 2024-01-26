@@ -1,0 +1,37 @@
+
+<link rel="shortcut icon" href="../static/img/Linux_logo.jpg" type="image/x-icon">
+<link rel="stylesheet" href="../static/form.css">
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+  <ul class="flash-messages">
+    {% set unique_messages = [] %}
+    {% for message in messages %}
+      {% if message not in unique_messages %}
+        {% set _ = unique_messages.append(message) %}
+        <li class="flash-message">{{ message }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endwith %}
+
+<section class="login">
+    <h1 class="registro">Registrese Aqui</h1>
+    <br>
+    <br>
+    <form action="/registro" method="POST">
+        <div class="form">
+            <input class="controls" type="text" name="fullname" placeholder="Full Name">
+            <input class="controls" type="text" name="email" placeholder="Email">
+            <input class="controls" type="text" name="linux_distribution" placeholder="Linux Distribution">
+            <input class="controls" type="text" name="phone" placeholder="Phone">
+            <input class="controls" type="text" name="edad" placeholder="Age">
+            <input class="controls" type="password" name="password" placeholder="password">
+            <button class="buttons" type="submit">Enviar</button>
+        </div>
+    </form>
+    <a href="{{ url_for('login') }}" class="back-button">Volver atrás</a>
+
+
+</section>

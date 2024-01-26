@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PicaMéxico</title>
+    <link rel="stylesheet" href="/static/css/registro.css">
+    <link rel="shortcut icon" href="/static/img/cactus.png" type="image/x-icon">
+  </head>
+  <body>
+
+    <div class="head">
+
+      <div class="logo">
+        <img src="/static/img/hat.png" height="53px" width="58px" alt="">
+      </div>
+
+      <nav class="navbar">
+          <a href="{{url_for('index')}}">Inicio</a>
+          <a href="{{url_for('lugares')}}">Lugares</a>
+          <a href="#">Contacto</a>
+      </nav>
+
+  </div>
+
+    <div class="login-box">
+      <img src="/static/img/cactus.png" class="avatar" alt="Avatar Image">
+      <h1>Registrate</h1>
+      <form action="/registrar" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Introduzca Nombre">
+        <label for="destino">Destino</label>
+        <input type="text" name="destino" placeholder="Introduzca Destino ">
+        <label for="fecha">Fecha</label>
+        <input type="text" name="fecha" placeholder="Introduzca Fecha">
+        <input type="submit" value="Log In">
+      </form>
+    </div>
+
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 PicaMéxico. Todos los derechos reservados.</p>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/profile.php?id=100089027561580"><img src="/static/img/facebook.png" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/x_ash.0/"><img src="/static/img/instagram.png" alt="Instagram"></a></li>
+      </ul>
+  </div>
+  </footer>
+
+  </body>
+</html>

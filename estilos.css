@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 63px;
+	background: #171717;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+  }
+  
+  .navbar {
+	display: flex;
+	margin-right: 10px;
+  }
+  
+  .logo {
+	margin-left: 30px;
+  }
+  
+  .logo a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+  }
+  
+  .navbar a {
+	display: block;
+	padding: 20px 20px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+  }
+  
+  .navbar a:hover {
+	background: #3f3f3f;
+  }
+  
+  .header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  
+  }
+  /* d */
+.ashley {
+  background-image: url(/static/img/head.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ashley-content {
+  text-align: center;
+  color: #000000;
+}
+
+.ashley-content h2 {
+  font-size: 36px;
+  
+}
+.erick{
+  color: red;
+  text-decoration: solid;
+  margin: 10px;
+  margin-top: 60px;
+}
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Estilos de los destinos */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  width: 400px; /* Ancho deseado */
+  height: 250px; /* Altura deseada */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  margin: 10px; 
+}
+
+.text-container {
+  background-color: #a7a3a3;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #201c1c;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+}

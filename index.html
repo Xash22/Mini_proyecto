@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PicaMéxico</title>
+  <link rel="stylesheet" href="/static/css/estilos.css">
+  <link rel="shortcut icon" href="/static/img/cactus.png" type="image/x-icon">
+</head>
+<body>
+  <div class="head">
+
+    <div class="logo">
+      <img src="/static/img/hat.png" height="53px" width="58px" alt="">
+    </div>
+
+    <nav class="navbar">
+        <a href="#">Inicio</a>
+        <a href="{{url_for('lugares')}}">Lugares</a>
+        <a href="{{url_for('contact')}}">Contacto</a>
+    </nav>
+
+</div>
+
+  <section class="ashley">
+    <div class="ashley-content">
+      <h2>Bienvenid@s a PicaMéxico</h2>
+      <p>Descubre los destinos más increíbles y vive experiencias inolvidables.</p>
+      <a href="{{url_for('lugares')}}" class="btn">Explorar</a>
+    </div>
+  </section>
+  <center><h2 class="erick">Algunos destinos para visitar</h2></center>
+  <div class="container">
+    <div class="image-container">
+      <img src="/static/img/ciudad.png" alt="Descripción de la imagen">
+    </div>
+      <div class="text-container">
+        <h3>Ciudad de México</h3>
+        <p>La Ciudad de México ofrece una experiencia inigualable llena de historia, cultura, gastronomía y entretenimiento. 
+          Es un destino que sin duda capturará tu atención y te dejará con recuerdos inolvidables.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="/static/img/puerto.jpg" alt="Descripción de la imagen">
+    </div>
+      <div class="text-container">
+        <h2>Puerto Vallarta</h2>
+        <p>Puerto Vallarta combina la belleza natural con su encanto histórico y una animada vida cultural.
+           Es un destino turístico popular que ofrece algo para todos, ya sea que busques relajación,
+           aventura, gastronomía o simplemente disfrutar de sus hermosos paisajes.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="/static/img/cancun.png" alt="Descripción de la imagen">
+    </div>
+      <div class="text-container">
+        <h2>Cancún</h2>
+        <p>Cancún es un destino turístico que combina belleza natural, cultura, historia y entretenimiento.
+           Es un lugar ideal para disfrutar de unas vacaciones tropicales inolvidables, ya sea que estés buscando 
+          relajarte en la playa, explorar sitios arqueológicos o disfrutar de la emocionante vida nocturna.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 PicaMéxico. Todos los derechos reservados.</p>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/profile.php?id=100089027561580"><img src="/static/img/facebook.png" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/x_ash.0/"><img src="/static/img/instagram.png" alt="Instagram"></a></li>
+    </ul>
+</div>
+</footer>
+
+</body>
+</html>

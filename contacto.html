@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Linux Dominicana</title>
+  <link rel="stylesheet" type="text/css" href="../static/contacto.css">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/linuxlogo.png') }}" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('enlace') }}">Inicio</a></li>
+        <li><a href="{{ url_for('acerca_de') }}">Acerca de</a></li>
+        <li><a href="{{ url_for('distribuciones') }}">Distribuciones</a></li>
+      <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class="flash-messages">
+        {% for message in messages %}
+          <li class="flash-message">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  <div class="espacion" style="height: 100px;"></div>
+    
+    <div class="contact-form">
+      <h2>Contacto</h2>
+      <form action="{{ url_for('contacto') }}" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+        
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo">
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        
+        <input type="submit" value="Enviar">
+      </form>
+      <a href="{{ url_for('index') }}" class="back-button">Volver atrás</a>
+
+  </main>
+  
+  <footer>
+    <img src="{{ url_for('static', filename='img/linuxlogo.png') }}" alt="">
+      <p>
+        &copy;2023 Linux Dominicana 
+        Todos los derechos reservados
+  </footer>
+</body>
+</html>
